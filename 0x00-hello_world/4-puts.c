@@ -4,7 +4,7 @@
  *
  * program outputs a message
  *
- *Return - program returns 0
+ *Return: returns 0 everytime
   */
 int main(void)
 {
