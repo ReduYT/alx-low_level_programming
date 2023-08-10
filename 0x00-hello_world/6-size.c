@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  *main - main function of my program
  *program outputs size of data types
  *Return - returns 0
