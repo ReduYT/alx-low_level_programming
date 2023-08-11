@@ -15,6 +15,11 @@ int main(void)
 		putchar(i);
 		putchar(i - 32);
 	}
+
+	for (i = 'a'; i <= 'z'; ++i)
+	{
+		putchar(i - 32);
+	}
 		putchar('\n');
 	return (0);
 }
