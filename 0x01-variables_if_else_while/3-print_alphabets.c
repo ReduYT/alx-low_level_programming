@@ -13,7 +13,6 @@ int main(void)
 	for (i = 'a'; i <= 'z'; ++i)
 	{
 		putchar(i);
-		putchar(i - 32);
 	}
 
 	for (i = 'a'; i <= 'z'; ++i)
