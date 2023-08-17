@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_number - prints an integer
+ * print_number - prints an integer both negative and positive
  * @n: integer to be printed
  */
 void print_number(int n)
