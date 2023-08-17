@@ -34,4 +34,4 @@ Solve the classic Fizz-Buzz problem: print numbers from 1 to 100 with specific r
 
 ### 10. Triangles
 
-Author: Rediet Y.
+# Author: Rediet Y.
