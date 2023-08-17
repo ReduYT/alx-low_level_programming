@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_square - prints a square
+ * print_triangle - prints a triangle
  * @size: size of square
  */
 void print_triangle(int size)
