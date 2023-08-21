@@ -1,14 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
-
-/**
- * _atoi - Converts a string to an integer.
- * @s: The input string.
- *
- * Return: The integer value extracted from the string.
- */
-
 #include "main.h"
 
 /**
@@ -17,7 +9,9 @@
  *
  * Return: The integer value extracted from the string.
  */
-int _atoi(char *s) {
+
+int _atoi(char *s)
+{
 	int j= 1;
 	unsigned int k = 0;
 
@@ -28,8 +22,10 @@ int _atoi(char *s) {
 			j *= -1;
 		}
 		else if (*s >= '0' && *s <= '9')
-		{k = k * 10 + (*s - '0');
-		} else if (k > 0) {
+		{
+			k = k * 10 + (*s - '0');
+		}
+		else if (k > 0) {
 			break;
 		}
 	}
