@@ -10,6 +10,7 @@
     int i;
     char* charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789=";
     int charset_size = sizeof(charset) - 1;
+    int index
 int main(void) {
     srand(time(NULL));
 
@@ -17,7 +18,7 @@ int main(void) {
 
     char password[13];
     for (i = 0; i < 12; i++) {
-        int index = rand() % charset_size;
+        index = rand() % charset_size;
         password[i] = charset[index];
     }
     password[12] = '\0';
