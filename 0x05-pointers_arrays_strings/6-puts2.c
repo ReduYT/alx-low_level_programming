@@ -5,7 +5,7 @@
  * @str: Pointer to the string.
  */
 void puts2(char *str)
- {
+{
 	size_t i;
 
 	for (i = 0; i < strlen(str); i++)
@@ -13,4 +13,5 @@ void puts2(char *str)
 		_putchar(str[i]);
 		i++;
 	}
+	_putchar('\n');
 }
