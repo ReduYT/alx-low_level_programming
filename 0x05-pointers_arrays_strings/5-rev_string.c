@@ -11,11 +11,11 @@
 void rev_string(char *s)
 {
 	size_t i;
-	
+
 	char *temp;
-	
+
 	int j = strlen(s) - 1;
-	
+
 	temp = (char *)malloc(strlen(s) + 1);
 
 
