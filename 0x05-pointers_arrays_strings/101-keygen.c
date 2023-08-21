@@ -7,17 +7,19 @@
  *
  * Return: returns the generated password
  */
-    int i;
-    char* charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789=";
-    int charset_size = sizeof(charset) - 1;
-    int index = 0;
-    char* password = (char *)malloc(13) ;
+
 int main(void) {
     srand(time(NULL));
 
+    int i;
+    char* charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789=";
+    int charset_size = sizeof(charset) - 1;
+    int randomIndex; // Renamed to avoid conflict with 'index' function
+
+    char password[13];
     for (i = 0; i < 12; i++) {
-        index = rand() % charset_size;
-        password[i] = charset[index];
+        randomIndex = rand() % charset_size; // Renamed 'index' to 'randomIndex'
+        password[i] = charset[randomIndex];
     }
     password[12] = '\0';
 
@@ -25,4 +27,3 @@ int main(void) {
 
     return 0;
 }
-
