@@ -10,13 +10,11 @@
     int i;
     char* charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789=";
     int charset_size = sizeof(charset) - 1;
-    int index
+    int index = 0;
+    char* password = (char *)malloc(13) ;
 int main(void) {
     srand(time(NULL));
 
-
-
-    char password[13];
     for (i = 0; i < 12; i++) {
         index = rand() % charset_size;
         password[i] = charset[index];
