@@ -17,23 +17,22 @@
  *
  * Return: The integer value extracted from the string.
  */
-int _atoi(char *s)
-{
-	int num = 0;
-	int j = 1;
+int _atoi(char *s) {
+	int j= 1;
+	unsigned int k = 0;
 
-	for (int i = 0; i < strlen(s); i++)
+	for (; *s != '\0'; s++)
 	{
-		if (s[i] == '-')
+		if (*s == '-')
 		{
-			j = -j;
+			j *= -1;
 		}
-		else if (s[i] >= '0' && s[i] <= '9')
-		{
-			num = num * 10 + (s[i] - '0');
-		}
-		else if (num > 0)
+		else if (*s >= '0' && *s <= '9')
+		{k = k * 10 + (*s - '0');
+		} else if (k > 0) {
 			break;
-	return (num * j);
+		}
 	}
+
+	return (k * j);
 }
