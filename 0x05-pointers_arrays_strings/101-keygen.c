@@ -7,10 +7,9 @@
  *
  * Return: returns the generated password
  */
-
+    int i;
 int main(void) {
     srand(time(NULL));
-    int i;
 
     char* charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789=";
     int charset_size = sizeof(charset) - 1;
