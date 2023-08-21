@@ -12,20 +12,19 @@
 
 int _atoi(char *s)
 {
-	int j= 1;
+	int j = 1;
 	unsigned int k = 0;
 
 	for (; *s != '\0'; s++)
 	{
 		if (*s == '-')
-		{
 			j *= -1;
-		}
 		else if (*s >= '0' && *s <= '9')
 		{
 			k = k * 10 + (*s - '0');
 		}
-		else if (k > 0) {
+		else if (k > 0)
+		{
 			break;
 		}
 	}
