@@ -11,7 +11,7 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	int i;
+	size_t i;
 
 	dest[strlen(src)] = '\0';
 
