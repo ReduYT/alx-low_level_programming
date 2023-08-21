@@ -11,13 +11,15 @@
 int main(void) {
     srand(time(NULL));
 
-    const char charset[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789=";
+    int i;
+    char* charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789=";
     int charset_size = sizeof(charset) - 1;
+    int randomIndex; // Renamed to avoid conflict with 'index' function
 
     char password[13];
-    for (int i = 0; i < 12; i++) {
-        int index = rand() % charset_size;
-        password[i] = charset[index];
+    for (i = 0; i < 12; i++) {
+        randomIndex = rand() % charset_size; // Renamed 'index' to 'randomIndex'
+        password[i] = charset[randomIndex];
     }
     password[12] = '\0';
 
@@ -25,4 +27,3 @@ int main(void) {
 
     return 0;
 }
-
