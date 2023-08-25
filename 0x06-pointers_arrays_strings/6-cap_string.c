@@ -1,5 +1,6 @@
 #include <string.h>
 #include <ctype.h>
+#include "main.h"
 
 /**
  * cap_string - Capitalize the first letter of words in a string.
