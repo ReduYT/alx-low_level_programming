@@ -2,28 +2,20 @@
 #include <stdlib.h>
 #include <time.h>
 
-/**
- * main - generates a random password
- *
- * Return: returns the generated password
- */
-
 int main(void) {
-    srand(time(NULL));
+    srand(time(0));
 
-    int i;
-    char* charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789=";
-    int charset_size = sizeof(charset) - 1;
-    int randomIndex; // Renamed to avoid conflict with 'index' function
-
-    char password[13];
-    for (i = 0; i < 12; i++) {
-        randomIndex = rand() % charset_size; // Renamed 'index' to 'randomIndex'
-        password[i] = charset[randomIndex];
+    char output[26]; 
+    
+    for (int i = 0; i < 26; i++) {
+        char c = rand() % 94 + 33; 
+        output[i] = c;
     }
-    password[12] = '\0';
 
-    printf("Generated Password: %s\n", password);
+    int remainingSum = 2772 - (int)output[0]; 
+    output[2645] = remainingSum; 
+
+    printf("%s\n", output);
 
     return 0;
 }
