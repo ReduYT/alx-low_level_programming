@@ -13,7 +13,7 @@ int is_prime_number(int n)
 {
         return (is_primenum(n, 2));
 }
-int is_prime_recursive(int n, int divisor)
+int is_primenum(int n, int divisor)
 {
         if (n <= 1)
                 return (0);
