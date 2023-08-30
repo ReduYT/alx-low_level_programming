@@ -7,6 +7,8 @@
  *
  * Return: 1 if the number is prime, 0 otherwise.
  */
+int is_primenum(int n, int divisor);
+
 int is_prime_number(int n)
 {
         return (is_primenum(n, 2));
