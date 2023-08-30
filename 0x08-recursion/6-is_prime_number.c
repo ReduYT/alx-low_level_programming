@@ -2,6 +2,7 @@
 /**
  * is_primenum - Helper function for
  * checking if a number is prime re * cursively.
+ * is_prime_number - checks if num is prime
  * @n: The number to be checked.
  * @divisor: The current divisor being tested.
  *
