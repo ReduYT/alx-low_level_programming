@@ -25,8 +25,8 @@ void print_all(const char * const format, ...)
 			printf("%f", va_arg(l, double));
 		else if (format[i] == 's')
 		{
-			string = va_arg(l, char *);
-			if (string)
+			s = va_arg(l, char *);
+			if (s)
 				printf("%s", s);
 			else
 				printf("(nil)");
