@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	Fnum = (get_op_func(argv[2]))(num1,num2);
+	Fnum = (get_op_func(argv[2]))(num1, num2);
 	printf("%d\n", Fnum);
 	return (0);
 }
