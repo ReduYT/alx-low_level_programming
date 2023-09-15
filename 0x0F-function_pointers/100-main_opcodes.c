@@ -2,23 +2,6 @@
 #include <stdlib.h>
 
 /**
- * print_opcodes - Print opcodes from a given start address.
- * @start: The start address of the code.
- * @bytes: The number of bytes to print.
- */
-void print_opcodes(char *start, int bytes)
-{
-  for (int i = 0; i < bytes; i++)
-  {
-    printf("%02hhx", start[i]);
-        if (i < bytes - 1)
-            printf(" ");
-        else
-            printf("\n");
-    }
-}
-
-/**
  * main - Entry point of the program.
  * @argc: Number of command-line arguments.
  * @argv: Array of command-line argument strings.
@@ -27,22 +10,19 @@ void print_opcodes(char *start, int bytes)
  */
 int main(int argc, char *argv[])
 {
-    int bytes;
+    int i, j;
 
-    if (argc != 2)
+    if (argc != 2 || (j = atoi(argv[1])) < 0)
     {
         printf("Error\n");
-        exit(1);
+        return (argc != 2 ? 1 : 2);
     }
 
-    bytes = atoi(argv[1]);
-    if (bytes < 0)
+    for (i = 0; i < j; i++)
     {
-        printf("Error\n");
-        exit(2);
+        printf("%02hhx", *((char *)main + i));
+        printf(i < j - 1 ? " " : "\n");
     }
 
-    print_opcodes((char *)&main, bytes);
-
-    return 0;
+    return (0);
 }
