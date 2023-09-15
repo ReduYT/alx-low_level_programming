@@ -3,7 +3,6 @@
   *op_add - calculates the sum of 2 numbers.
   *@a: num 1.
   *@b: num 2.
-  *
   *Return: returns sum of a and b.
   */
 int op_add(int a, int b)
@@ -27,7 +26,6 @@ int op_sub(int a, int b)
   *op_mul - calculates product of two numbers.
   *@a: num 1.
   *@b: num 2.
-  *
   *Return: product of a and b.
   */
 int op_mul(int a, int b)
